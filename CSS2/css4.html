@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>pH Scale</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    .pH-scale {
+      display: flex;
+      flex-direction: column-reverse; /* Reverse the order of elements vertically */
+      height: 100vh; /* Set the height of the scale to the viewport height */
+      justify-content: space-around;
+      align-items: center;
+      background-color: #f0f0f0; /* Set background color */
+    }
+    .pH-level {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 40px;
+      width: 100%;
+      border-bottom: 1px solid #ccc; /* Add border between pH levels */
+    }
+    .acidic {
+      background: linear-gradient(to bottom, #0033cc, #66ccff 25%, #00ccff 100%);
+      border-bottom: 3px solid #0033cc;
+    }
+    .neutral {
+      background-color: #66cc66; /* Set color for neutral level */
+    }
+    .alkaline {
+      background: linear-gradient(to bottom, #ff99cc, #ff3399 50%, #ff0066 100%);
+      border-bottom: 3px solid #ff0066;
+    }
+    .description {
+      font-size: 12px;
+      margin-right: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="pH-scale">
+    <div class="pH-level acidic">
+      <span class="description">0.0 VERY ACID</span>
+    </div>
+    <div class="pH-level acidic">
+      <span class="description">1.0</span>
+    </div>
+    <div class="pH-level acidic">
+      <span class="description">2.0</span>
+    </div>
+    <div class="pH-level acidic">
+      <span class="description">3.0</span>
+    </div>
+    <div class="pH-level acidic">
+      <span class="description">4.0</span>
+    </div>
+    <div class="pH-level acidic">
+      <span class="description">5.0</span>
+    </div>
+    <div class="pH-level acidic">
+      <span class="description">6.0</span>
+    </div>
+    <div class="pH-level neutral">
+      <span class="description">7.0 NEUTRAL</span>
+    </div>
+    <div class="pH-level alkaline">
+      <span class="description">8.0</span>
+    </div>
+    <div class="pH-level alkaline">
+      <span class="description">9.0</span>
+    </div>
+    <div class="pH-level alkaline">
+      <span class="description">10.0</span>
+    </div>
+    <div class="pH-level alkaline">
+      <span class="description">11.0</span>
+    </div>
+    <div class="pH-level alkaline">
+      <span class="description">12.0</span>
+    </div>
+    <div class="pH-level alkaline">
+      <span class="description">13.0</span>
+    </div>
+    <div class="pH-level alkaline">
+      <span class="description">14.0 VERY ALKALINE</span>
+    </div>
+  </div>
+
+</body>
+</html>
